@@ -2,7 +2,7 @@
     REPORTE DE ANÁLISIS EXPLORATORIO DE DATOS (EDA)
     ===============================================
     
-    Fecha de generación: 2025-07-12 15:50:31
+    Fecha de generación: 2025-07-13 12:13:37
     Segmento: 1/4 del proyecto
     
     ARCHIVOS GENERADOS:
