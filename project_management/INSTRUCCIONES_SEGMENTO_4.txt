@@ -1,0 +1,21 @@
+
+PRÓXIMOS PASOS - SEGMENTO 4
+==========================
+
+ESTADO ACTUAL:
+-------------
+✓ Segmento 1: EDA [COMPLETADO]
+✓ Segmento 2: ML Models [COMPLETADO]  
+✓ Segmento 3: MLflow [COMPLETADO]
+◯ Segmento 4: Dashboard [PENDIENTE]
+
+ARCHIVOS DISPONIBLES:
+--------------------
+- data_processed/*.pkl (datos procesados)
+- models_results/*.pkl (modelos)
+- mlflow_registered_models.json (registry)
+- mlruns/ (experimentos mlflow)
+
+SIGUIENTE COMANDO:
+-----------------
+streamlit run segmento4_dashboard_integrado.py

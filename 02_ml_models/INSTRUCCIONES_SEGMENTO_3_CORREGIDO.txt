@@ -1,0 +1,86 @@
+
+INSTRUCCIONES PARA SEGMENTO 3: MLFLOW EXPERIMENTS (VERSIÓN CORREGIDA)
+=====================================================================
+
+ARCHIVOS A UTILIZAR:
+-------------------
+- models_results/resultados_modelos_limpio.pkl    → Datos sin objetos problemáticos
+- models_results/modelos_sklearn.pkl              → Solo modelos sklearn serializables
+- models_results/mlflow_prepared_data.pkl         → Estructura optimizada para MLflow
+- models_results/comparacion_*.csv                → Métricas de comparación
+
+CORRECCIONES IMPLEMENTADAS:
+--------------------------
+✓ Problema de serialización PAM/K-medoids SOLUCIONADO
+✓ Modelos sklearn separados y funcionalmente serializables
+✓ Estructura limpia preparada específicamente para MLflow
+✓ Manejo robusto de errores de exportación
+
+CONFIGURACIÓN DE MLFLOW:
+-----------------------
+1. Instalar MLflow: pip install mlflow boto3
+2. Configurar AWS EC2 instance
+3. Configurar MLflow tracking server
+4. Configurar artifact store (S3 bucket)
+
+EXPERIMENTOS A REGISTRAR:
+------------------------
+CLUSTERING:
+- K-Means experiments (k=2 a 10) → usar modelos_sklearn.pkl
+- Hierarchical clustering experiments → usar modelos_sklearn.pkl
+- PAM experiments → usar solo métricas (medoids info disponible)
+- Comparison experiment
+
+CLASIFICACIÓN:
+- Logistic Regression with GridSearch → usar modelos_sklearn.pkl
+- Decision Tree with GridSearch → usar modelos_sklearn.pkl
+- Model comparison experiment
+
+MLFLOW TRACKING REQUERIDO:
+--------------------------
+1. Parameters: Todos los hiperparámetros
+2. Metrics: Todas las métricas calculadas
+3. Artifacts: 
+   - Modelos serializados (sklearn)
+   - Gráficos de métricas
+   - Confusion matrices
+   - ROC curves
+   - Información de medoids (PAM)
+4. Tags: model_type, algorithm, optimization_metric
+
+CARGA DE MODELOS PARA MLFLOW:
+----------------------------
+```python
+import pickle
+with open('models_results/modelos_sklearn.pkl', 'rb') as f:
+    modelos = pickle.load(f)
+    
+# Modelos disponibles:
+# - kmeans_mejor
+# - jerarquico_mejor  
+# - logistica_mejor
+# - arbol_mejor
+```
+
+OUTPUTS ESPERADOS PARA EL REPORTE:
+---------------------------------
+1. Screenshots de MLflow UI en EC2
+2. Model Registry con versiones
+3. Experiments dashboard
+4. Artifact storage evidencia
+5. IP de EC2 visible en capturas
+6. Evidencia de modelos funcionando correctamente
+
+PREPARACIÓN PARA DASHBOARD:
+--------------------------
+Los modelos registrados en MLflow deben estar listos para:
+- Integración con dashboard final
+- Serving de predicciones
+- Comparación visual de resultados
+
+NOTAS TÉCNICAS:
+--------------
+- PAM se maneja solo con métricas y información de medoids
+- Todos los modelos sklearn están probados y funcionan
+- Estructura JSON disponible para interoperabilidad
+- Validación automática implementada

@@ -1,0 +1,85 @@
+
+REPORTE TÉCNICO DE MODELOS DE MACHINE LEARNING (VERSIÓN CORREGIDA)
+================================================================
+
+Fecha de generación: 2025-07-12 17:17:00
+Segmento: 2/4 del proyecto
+
+MODELOS DE CLUSTERING ENTRENADOS:
+=================================
+
+K-MEANS:
+--------
+
+Mejor configuración: k=10
+Silhouette Score: 0.6086
+Calinski-Harabasz: 21.3667
+Davies-Bouldin: 1.0364
+Inercia: 1761.80
+
+CLUSTERING JERÁRQUICO:
+---------------------
+
+Mejor configuración: k=9, linkage=ward
+Silhouette Score: 0.5963
+Calinski-Harabasz: 21.1178
+Davies-Bouldin: 1.2646
+
+PAM (K-MEDOIDS):
+---------------
+
+Mejor configuración: k=9
+Silhouette Score: 0.4498
+Medoids encontrados: 9
+
+
+MODELOS DE CLASIFICACIÓN ENTRENADOS:
+===================================
+
+REGRESIÓN LOGÍSTICA:
+-------------------
+
+Mejores parámetros: {'C': 0.01, 'max_iter': 1000}
+Accuracy: 0.7742
+AUC-ROC: 0.8932
+CV Score: 0.8039 ± 0.0206
+
+ÁRBOL DE DECISIÓN:
+-----------------
+
+Mejores parámetros: {'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 10}
+Accuracy: 0.7742
+AUC-ROC: 0.8376
+CV Score: 0.8490 ± 0.0584
+
+
+ARCHIVOS GENERADOS (VERSIÓN CORREGIDA):
+======================================
+- models_results/resultados_modelos_limpio.pkl (sin objetos problemáticos)
+- models_results/resultados_modelos.json (interoperable)
+- models_results/modelos_sklearn.pkl (solo modelos sklearn)
+- models_results/comparacion_clustering.csv
+- models_results/comparacion_clasificacion.csv
+
+CORRECCIONES IMPLEMENTADAS:
+==========================
+- Problema de serialización PAM/K-medoids SOLUCIONADO
+- Objetos pyclustering separados de objetos sklearn
+- Estructura limpia para MLflow preparada
+- Manejo robusto de errores de exportación
+
+PREPARACIÓN PARA MLFLOW:
+=======================
+Todos los modelos están listos para ser registrados en MLflow con:
+- Parámetros optimizados documentados
+- Métricas completas calculadas
+- Artifacts preparados para logging
+- Metadata estructurada
+- Modelos sklearn serializables por separado
+
+PRÓXIMOS PASOS:
+==============
+SEGMENTO 1: Data Processing + EDA [COMPLETADO]
+SEGMENTO 2: Modelos ML [COMPLETADO - CORREGIDO]
+SEGMENTO 3: MLflow Experiments [PENDIENTE]
+SEGMENTO 4: Dashboard Integrado [PENDIENTE]
