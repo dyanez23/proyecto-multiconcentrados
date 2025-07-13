@@ -1,0 +1,42 @@
+
+    INSTRUCCIONES PARA SEGMENTO 2: MODELOS DE MACHINE LEARNING
+    =========================================================
+    
+    ARCHIVOS A UTILIZAR:
+    -------------------
+    data_processed/datos_clustering.pkl     → Para modelos de clustering
+    data_processed/datos_clasificacion.pkl  → Para modelos de clasificación
+    data_processed/configuracion.pkl        → Configuraciones y constantes
+    
+    MODELOS A IMPLEMENTAR:
+    ---------------------
+    CLUSTERING:
+       - K-Means (con optimización de k)
+       - Clustering Jerárquico (linkage ward)
+       - PAM/K-Medoids (con matriz de distancias)
+    
+    CLASIFICACIÓN:
+       - Regresión Logística (clientes frecuentes)
+       - Árbol de Decisión (interpretabilidad)
+    
+    MÉTRICAS A CALCULAR:
+    -------------------
+    Clustering: Silhouette Score, Calinski-Harabasz, Davies-Bouldin
+    Clasificación: Accuracy, Precision, Recall, F1, AUC-ROC
+    
+    OUTPUTS ESPERADOS:
+    -----------------
+    models_results/
+       - resultados_clustering.pkl
+       - resultados_clasificacion.pkl
+       - metricas_comparacion.pkl
+       - mejores_modelos.pkl
+    
+    PREPARACIÓN PARA MLFLOW:
+    -----------------------
+    Cada modelo debe ser preparado con:
+       - Parámetros documentados
+       - Métricas calculadas
+       - Artifacts para logging
+       - Metadata completa
+    
