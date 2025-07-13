@@ -1,0 +1,44 @@
+
+REPORTE MLFLOW EXPERIMENTS - ENTREGA 2
+======================================
+
+INFORMACIÓN DEL SISTEMA:
+-----------------------
+Timestamp: 2025-07-13T12:14:04.868296
+Hostname: MacBook-Air-de-Daniela-3.local
+IP: localhost
+Platform: macOS-15.4.1-arm64-arm-64bit
+Python: 3.12.2
+
+CONFIGURACIÓN MLFLOW:
+--------------------
+Tracking URI: file:./mlruns
+Experiment ID: 110674217759347918
+
+EXPERIMENTOS EJECUTADOS:
+-----------------------
+Total Runs: 10
+
+MODEL REGISTRY:
+--------------
+Modelos Registrados: 3
+
+- best_clustering_model_kmeans v1 (clustering) - Production
+- best_classification_model_logistica v1 (classification) - Production
+- best_classification_model_arbol v1 (classification) - Production
+
+
+ACCESO A MLFLOW UI:
+------------------
+Comando Local: mlflow ui
+URL Local: http://localhost:5000
+
+Comando EC2: mlflow ui --host 0.0.0.0 --port 5000
+URL EC2: http://localhost:5000
+
+STATUS:
+-------
+✓ MLflow configurado
+✓ Experimentos registrados
+✓ Model Registry configurado
+✓ Listo para screenshots

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "best_clustering_model_kmeans",
+    "version": "1",
+    "type": "clustering",
+    "algorithm": "kmeans",
+    "metric": 0.72,
+    "stage": "Production"
+  },
+  {
+    "name": "best_classification_model_logistica",
+    "version": "1",
+    "type": "classification",
+    "algorithm": "logistica",
+    "accuracy": 0.85,
+    "auc": 0.88,
+    "stage": "Production"
+  },
+  {
+    "name": "best_classification_model_arbol",
+    "version": "1",
+    "type": "classification",
+    "algorithm": "arbol",
+    "accuracy": 0.78,
+    "auc": 0.82,
+    "stage": "Production"
+  }
+]
