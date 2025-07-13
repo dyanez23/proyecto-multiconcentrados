@@ -1,0 +1,18 @@
+
+CHECKLIST SCREENSHOTS
+====================
+
+OBLIGATORIOS:
+------------
+□ 1. MLflow UI Principal
+□ 2. Lista de Runs
+□ 3. Detalle Run Clustering
+□ 4. Detalle Run Clasificación  
+□ 5. Model Registry
+□ 6. Terminal con ejecución
+
+VERIFICAR:
+---------
+□ Experimentos cargados
+□ Métricas visibles
+□ Modelos registrados

@@ -1,0 +1,25 @@
+
+INSTRUCCIONES AWS EC2 - MLFLOW
+=============================
+
+SETUP BÁSICO:
+------------
+1. Instancia Ubuntu 20.04 LTS
+2. Security Group: Puerto 22 (SSH) + Puerto 5000 (MLflow)
+
+INSTALACIÓN:
+-----------
+sudo apt update && sudo apt install python3-pip -y
+pip install mlflow scikit-learn matplotlib seaborn pandas
+
+EJECUTAR:
+--------
+python segmento3_FUNCIONAL_SIN_ERRORES.py
+
+INICIAR MLFLOW UI:
+-----------------
+mlflow ui --host 0.0.0.0 --port 5000
+
+ACCEDER:
+-------
+http://IP-PUBLICA:5000

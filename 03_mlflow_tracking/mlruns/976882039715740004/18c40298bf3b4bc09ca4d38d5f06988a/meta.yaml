@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/eduarfeliperianotorres/Documents/Maestría en Inteligencia
+  Analítica para la Toma de Decisiones (MIIA)/III Semester/Despliegue Soluciones
+  Analiticas/Proyecto/Entrega II/Segmentos/mlruns/976882039715740004/18c40298bf3b4bc09ca4d38d5f06988a/artifacts
+end_time: 1752360182253
+entry_point_name: ''
+experiment_id: '976882039715740004'
+lifecycle_stage: active
+run_id: 18c40298bf3b4bc09ca4d38d5f06988a
+run_name: kmeans_k_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752360182244
+status: 3
+tags: []
+user_id: eduarfeliperianotorres

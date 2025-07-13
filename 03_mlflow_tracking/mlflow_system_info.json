@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-07-12T17:43:02.150586",
+  "hostname": "192.168.2.47",
+  "platform": "macOS-15.5-arm64-arm-64bit-Mach-O",
+  "python_version": "3.13.3",
+  "tracking_uri": "file:./mlruns",
+  "experiment_id": "976882039715740004",
+  "public_ip": "localhost"
+}

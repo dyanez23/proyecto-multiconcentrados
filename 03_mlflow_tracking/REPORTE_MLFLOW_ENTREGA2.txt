@@ -1,0 +1,41 @@
+
+REPORTE MLFLOW EXPERIMENTS - ENTREGA 2
+======================================
+
+INFORMACIÓN DEL SISTEMA:
+-----------------------
+Timestamp: 2025-07-12T17:43:02.150586
+Hostname: 192.168.2.47
+IP: localhost
+Platform: macOS-15.5-arm64-arm-64bit-Mach-O
+Python: 3.13.3
+
+CONFIGURACIÓN MLFLOW:
+--------------------
+Tracking URI: file:./mlruns
+Experiment ID: 976882039715740004
+
+EXPERIMENTOS EJECUTADOS:
+-----------------------
+Total Runs: 10
+
+MODEL REGISTRY:
+--------------
+Modelos Registrados: 0
+
+
+
+ACCESO A MLFLOW UI:
+------------------
+Comando Local: mlflow ui
+URL Local: http://localhost:5000
+
+Comando EC2: mlflow ui --host 0.0.0.0 --port 5000
+URL EC2: http://localhost:5000
+
+STATUS:
+-------
+✓ MLflow configurado
+✓ Experimentos registrados
+✓ Model Registry configurado
+✓ Listo para screenshots
